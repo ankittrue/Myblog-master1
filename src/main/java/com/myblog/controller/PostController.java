@@ -31,7 +31,7 @@ public class PostController {
         return new ResponseEntity<>(dto,HttpStatus.OK);
     }
 
-//    localhost:8080/api/posts?pageNo=0&pageSize=3&sortBy=title&sortDir
+//    http://localhost:8080/api/posts?pageNo=0&pageSize=3&sortBy=title&sortDir
     @GetMapping
     public List<PostDto> getAllPosts(
             @RequestParam(name = "pageNo", required = false,defaultValue = "0") int pageNo,
